@@ -24,12 +24,12 @@ export default function HomePage() {
                     <div className="elementor-widget-wrap elementor-element-populated">
                       <div className="elementor-element elementor-element-ff0d39d has-box elementor-widget elementor-widget-image" data-id="ff0d39d" data-element_type="widget" data-widget_type="image.default">
                         <div className="elementor-widget-container">
-                          <Image src="/assets/images/image-primary.png" className="attachment-large size-large" alt="Việt và Hảo Wedding" width={460} height={580} priority />
+                          <Image src="/assets/images/image-primary.png" className="attachment-large size-large" alt="Việt và Hảo Wedding" width={460} height={580} sizes="100vw" priority />
                         </div>
                       </div>
                       <div className="elementor-element elementor-element-a82cb3d float-horizontal elementor-widget elementor-widget-image" data-id="a82cb3d" data-element_type="widget" data-widget_type="image.default">
                         <div className="elementor-widget-container">
-                          <Image src="/assets/images/title-text-2.png" className="attachment-large size-large" alt="Việt và Hảo" width={538} height={144} />
+                          <Image src="/assets/images/title-text-2.png" className="attachment-large size-large" alt="Việt và Hảo" width={538} height={144} sizes="100vw" />
                         </div>
                       </div>
                       <div className="elementor-element elementor-element-adaf77c elementor-absolute elementor-widget-tablet__width-auto elementor-widget elementor-widget-image" data-id="adaf77c" data-element_type="widget" data-settings='{"_position":"absolute"}' data-widget_type="image.default">

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import Link from "next/link";
+import Image from "next/image";
 import { promises as fs } from 'fs';
 import path from 'path';
 import galleryConfig from '@/data/gallery.json';
@@ -118,10 +119,14 @@ export default async function AnhCuoiPage() {
                                             <figure className="swiper-slide-inner">
                                               {/* Only render img for the first slide (Cover) */}
                                               {imgIndex === 0 ? (
-                                                <img
+                                                <Image
                                                   className="swiper-slide-image"
                                                   src={imagePath}
                                                   alt={imageTitle}
+                                                  width={0}
+                                                  height={0}
+                                                  sizes="100vw"
+                                                  style={{ width: '100%', height: 'auto' }}
                                                 />
                                               ) : null}
                                             </figure>
