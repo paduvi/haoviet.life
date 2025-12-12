@@ -556,7 +556,8 @@ footer.elementor-slideshow__footer.elementor-lightbox-prevent-close .elementor-s
   }
 }
 
-.elementor-invisible {
+.elementor-invisible,
+.initial-hidden {
   opacity: 0 !important;
   visibility: hidden !important;
 }

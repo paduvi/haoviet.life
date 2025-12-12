@@ -5,7 +5,8 @@ import { useEffect } from "react";
 export default function ElementorWaypoints() {
     useEffect(() => {
         // Select all elements that are hidden and waiting for animation
-        const elements = document.querySelectorAll(".elementor-invisible");
+        // We include both the standard Elementor class and our custom helper class
+        const elements = document.querySelectorAll(".elementor-invisible, .initial-hidden");
 
         if (elements.length === 0) return;
 
@@ -41,7 +42,24 @@ export default function ElementorWaypoints() {
                             // Remove invisible class and add animation classes
                             // We use requestAnimationFrame to ensure the class change triggers a reflow/repaint
                             requestAnimationFrame(() => {
-                                el.classList.remove("elementor-invisible");
+                                el.classList.remove("elementor-invisible", "initial-hidden");
+                                // Only remove visibility immediately so browser attempts to render (but opacity is still 0)
+                                el.style.visibility = "";
+
+                                // Wait for animation to actually start before removing opacity
+                                const handleAnimationStart = () => {
+                                    el.style.opacity = "";
+                                    el.removeEventListener('animationstart', handleAnimationStart);
+                                };
+
+                                el.addEventListener('animationstart', handleAnimationStart);
+
+                                // Fallback: if animation doesn't start within expected time (delay + 100ms safety)
+                                setTimeout(() => {
+                                    el.style.opacity = "";
+                                    el.removeEventListener('animationstart', handleAnimationStart);
+                                }, animationDelay + 100);
+
                                 el.classList.add("animated", animationName);
                             });
 
@@ -49,7 +67,9 @@ export default function ElementorWaypoints() {
                             observer.unobserve(el);
                         } else {
                             // Fallback if no animation found: just show it
-                            el.classList.remove("elementor-invisible");
+                            el.classList.remove("elementor-invisible", "initial-hidden");
+                            el.style.opacity = "";
+                            el.style.visibility = "";
                             observer.unobserve(el);
                         }
                     }
