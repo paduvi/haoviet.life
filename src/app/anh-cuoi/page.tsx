@@ -58,7 +58,7 @@ export default async function AnhCuoiPage() {
 
           <div className="entry-content">
             <div data-elementor-type="wp-page" data-elementor-id="29" className="elementor elementor-29">
-              <div className="elementor-section-wrap">
+              <div className="elementor-section-wrap" style={{ overflow: "hidden" }}>
                 <section className="elementor-section elementor-top-section elementor-element elementor-element-3ca1a85 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3ca1a85" data-element_type="section" data-settings='{"background_background":"classic"}'>
                   <div className="elementor-container elementor-column-gap-default">
 
