@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import Link from "next/link";
+
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from '@vercel/analytics/next';
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -114,6 +117,9 @@ export default function RootLayout({
 
         <Script src="/assets/js/elements-handlers.min.js" strategy="afterInteractive" />
         <Script src="/assets/js/dialog.min.js" strategy="afterInteractive" />
+
+        <SpeedInsights />
+        <Analytics />
       </body>
 
     </html>

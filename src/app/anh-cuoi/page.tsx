@@ -108,7 +108,7 @@ export default async function AnhCuoiPage() {
                                       const imageTitle = path.basename(imagePath, path.extname(imagePath));
 
                                       return (
-                                        <div key={imagePath} className={slideClass} style={{ width: "232px" }}>
+                                        <div key={imagePath} className={slideClass}>
                                           <a
                                             data-elementor-open-lightbox="yes"
                                             data-elementor-lightbox-slideshow={carouselId}
