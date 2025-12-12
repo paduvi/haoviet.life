@@ -24,7 +24,7 @@ export default function HomePage() {
                     <div className="elementor-widget-wrap elementor-element-populated">
                       <div className="elementor-element elementor-element-ff0d39d has-box elementor-widget elementor-widget-image" data-id="ff0d39d" data-element_type="widget" data-widget_type="image.default">
                         <div className="elementor-widget-container">
-                          <Image src="/assets/images/image-primary.png" className="attachment-large size-large" alt="Việt và Hảo Wedding" width={460} height={580} sizes="100vw" priority />
+                          <Image src="/assets/images/image-primary.png" className="attachment-large size-large" alt="Việt và Hảo Wedding" width={460} height={580} sizes="100vw" priority unoptimized />
                         </div>
                       </div>
                       <div className="elementor-element elementor-element-a82cb3d float-horizontal elementor-widget elementor-widget-image" data-id="a82cb3d" data-element_type="widget" data-widget_type="image.default">
@@ -152,20 +152,20 @@ export default function HomePage() {
                           <div className="list-image-container">
                             <div className="row padding-lg-20">
                               <div className="col-auto order-2">
-                                <div className="image-item item-order-1 main"><div className="image-wrap"><Image src={landingData.images.anhCuoi[0]} alt="Ảnh cưới 1" width={400} height={500} /></div></div>
+                                <div className="image-item item-order-1 main"><div className="image-wrap"><Image src={landingData.images.anhCuoi[0]} alt="Ảnh cưới 1" width={400} height={500} unoptimized /></div></div>
                                 <div className="circle-spin"></div>
                               </div>
                               <div className="col-sm-6 col-auto order-1 text-right">
-                                <div className="image-item item-order-2 "><div className="image-wrap"><Image src={landingData.images.anhCuoi[1]} alt="Ảnh cưới 2" width={200} height={250} /></div></div>
-                                <div className="image-item item-order-3 "><div className="image-wrap"><Image src={landingData.images.anhCuoi[2]} alt="Ảnh cưới 3" width={200} height={250} /></div></div>
+                                <div className="image-item item-order-2 "><div className="image-wrap"><Image src={landingData.images.anhCuoi[1]} alt="Ảnh cưới 2" width={200} height={250} unoptimized /></div></div>
+                                <div className="image-item item-order-3 "><div className="image-wrap"><Image src={landingData.images.anhCuoi[2]} alt="Ảnh cưới 3" width={200} height={250} unoptimized /></div></div>
                               </div>
                               <div className="col-sm-6 col-auto order-3">
-                                <div className="image-item item-order-4 "><div className="image-wrap"><Image src={landingData.images.anhCuoi[3]} alt="Ảnh cưới 4" width={200} height={250} /></div></div>
-                                <div className="image-item item-order-5 "><div className="image-wrap"><Image src={landingData.images.anhCuoi[4]} alt="Ảnh cưới 5" width={200} height={250} /></div></div>
+                                <div className="image-item item-order-4 "><div className="image-wrap"><Image src={landingData.images.anhCuoi[3]} alt="Ảnh cưới 4" width={200} height={250} unoptimized /></div></div>
+                                <div className="image-item item-order-5 "><div className="image-wrap"><Image src={landingData.images.anhCuoi[4]} alt="Ảnh cưới 5" width={200} height={250} unoptimized /></div></div>
                               </div>
                               <div className="col-sm-12 col-auto order-4">
-                                <div className="image-item item-order-6 "><div className="image-wrap"><Image src={landingData.images.anhCuoi[5]} alt="Ảnh cưới 6" width={200} height={250} /></div></div>
-                                <div className="image-item item-order-7 "><div className="image-wrap"><Image src={landingData.images.anhCuoi[6]} alt="Ảnh cưới 7" width={200} height={250} /></div></div>
+                                <div className="image-item item-order-6 "><div className="image-wrap"><Image src={landingData.images.anhCuoi[5]} alt="Ảnh cưới 6" width={200} height={250} unoptimized /></div></div>
+                                <div className="image-item item-order-7 "><div className="image-wrap"><Image src={landingData.images.anhCuoi[6]} alt="Ảnh cưới 7" width={200} height={250} unoptimized /></div></div>
                                 <Link className="btn-curve" href="/anh-cuoi">Xem thêm <br />nhiều ảnh nữa</Link>
                               </div>
                               <div className="bg-text">
