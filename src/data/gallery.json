@@ -1,0 +1,29 @@
+{
+  "albums": [
+    {
+      "title": ["Kỷ niệm", "ăn hỏi"],
+      "directory": "/gallery/an-hoi",
+      "cover": "/gallery/album01-01.jpg"
+    },
+    {
+      "title": ["Bộ ảnh", "màu phim"],
+      "directory": "/gallery/mau-phim",
+      "cover": "/gallery/album02-01.jpg"
+    },
+    {
+      "title": ["Bộ ảnh", "dưa hấu"],
+      "directory": "/gallery/dua-hau",
+      "cover": "/gallery/album03-01.jpg"
+    },
+    {
+      "title": ["Bộ studio", "váy cưới"],
+      "directory": "/gallery/studio-vay-cuoi",
+      "cover": "/gallery/studio-vay-cuoi/NXT_5202.jpg"
+    },
+    {
+      "title": ["Joker", "Harley"],
+      "directory": "/gallery/joker-harley",
+      "cover": "/gallery/joker-harley/photo_2022-02-06_05-37-40.jpg"
+    }
+  ]
+}
