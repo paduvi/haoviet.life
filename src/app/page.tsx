@@ -1,10 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import landingData from "@/data/landing.json";
+import ElementorWaypoints from "@/components/ElementorWaypoints";
 
 export default function HomePage() {
   return (
     <main id="primary" className="site-main">
+      <ElementorWaypoints />
       <article id="post-2" className="post-2 page type-page status-publish has-post-thumbnail hentry">
         <header className="entry-header">
           <div id="breadcrumbs"><span><span className="breadcrumb_last" aria-current="page">Trang chủ</span></span></div>
@@ -18,7 +20,7 @@ export default function HomePage() {
               <section className="elementor-section elementor-top-section elementor-element elementor-element-23694067 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="23694067" data-element_type="section" data-settings='{"background_background":"classic"}'>
                 <div className="elementor-background-overlay"></div>
                 <div className="elementor-container elementor-column-gap-default">
-                  <div className="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-4b4acacc animated-slow animated fadeIn" data-id="4b4acacc" data-element_type="column" data-settings='{"animation":"fadeIn"}'>
+                  <div className="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-4b4acacc animated-slow elementor-invisible" data-id="4b4acacc" data-element_type="column" data-settings='{"animation":"fadeIn"}'>
                     <div className="elementor-widget-wrap elementor-element-populated">
                       <div className="elementor-element elementor-element-ff0d39d has-box elementor-widget elementor-widget-image" data-id="ff0d39d" data-element_type="widget" data-widget_type="image.default">
                         <div className="elementor-widget-container">
@@ -37,15 +39,16 @@ export default function HomePage() {
                       </div>
                     </div>
                   </div>
+                  {/* Start Text */}
                   <div className="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-53e8fab" data-id="53e8fab" data-element_type="column">
                     <div className="elementor-widget-wrap elementor-element-populated">
-                      <div className="elementor-element elementor-element-7e95a80e animated-slow elementor-widget elementor-widget-text-editor animated fadeInRight" data-id="7e95a80e" data-element_type="widget" data-settings='{"_animation":"fadeInRight","_animation_delay":400}' data-widget_type="text-editor.default">
+                      <div className="elementor-element elementor-element-7e95a80e animated-slow elementor-widget elementor-widget-text-editor elementor-invisible" data-id="7e95a80e" data-element_type="widget" data-settings='{"_animation":"fadeInRight","_animation_delay":400}' data-widget_type="text-editor.default">
                         <div className="elementor-widget-container">
                           <p>Chào mọi người!</p>
                           <p><strong>Đây là đám cưới của Hảo và Việt – một đám cưới <span className="has-line">không đặc biệt</span>.</strong></p>
                         </div>
                       </div>
-                      <section className="elementor-section elementor-inner-section elementor-element elementor-element-13ee1e8 animated-slow elementor-section-boxed elementor-section-height-default elementor-section-height-default animated fadeInUp" data-id="13ee1e8" data-element_type="section" data-settings='{"animation":"fadeInUp","animation_delay":600}'>
+                      <section className="elementor-section elementor-inner-section elementor-element elementor-element-13ee1e8 animated-slow elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible" data-id="13ee1e8" data-element_type="section" data-settings='{"animation":"fadeInUp","animation_delay":600}'>
                         <div className="elementor-container elementor-column-gap-default">
                           {/* Icon Box 1 - Không thiệp mời */}
                           <div className="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-d8ad6d0" data-id="d8ad6d0" data-element_type="column">
@@ -112,7 +115,7 @@ export default function HomePage() {
                           </div>
                         </div>
                       </section>
-                      <div className="elementor-element elementor-element-a8b11d2 animated-slow elementor-widget elementor-widget-text-editor animated fadeInUp" data-id="a8b11d2" data-element_type="widget" data-settings='{"_animation":"fadeInUp","_animation_delay":800}' data-widget_type="text-editor.default">
+                      <div className="elementor-element elementor-element-a8b11d2 animated-slow elementor-widget elementor-widget-text-editor elementor-invisible" data-id="a8b11d2" data-element_type="widget" data-settings='{"_animation":"fadeInUp","_animation_delay":800}' data-widget_type="text-editor.default">
                         <div className="elementor-widget-container">
                           <p>Khi bạn đọc được những dòng này, ít nhiều cũng đã biết đến chúng mình. Thật may mắn là chúng ta đã có cơ duyên để biết nhau, không quan trọng trước đó chúng ta đã gặp nhau hay chưa.</p>
                           <p>Chúng mình biết ơn sự có mặt của bạn tại đây để tham dự đám cưới của chúng mình. Đây là một sự kiện riêng tư, mời bạn tham gia vào hành trình này cùng chúng mình nhé!</p>
@@ -136,6 +139,7 @@ export default function HomePage() {
                   </div>
                 </div>
               </section>
+              {/* End Text */}
 
               {/* Image Gallery Section */}
               <section className="elementor-section elementor-top-section elementor-element elementor-element-a913e48 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="a913e48" data-element_type="section">
@@ -143,7 +147,7 @@ export default function HomePage() {
                 <div className="elementor-container elementor-column-gap-default">
                   <div className="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a747110" data-id="a747110" data-element_type="column">
                     <div className="elementor-widget-wrap elementor-element-populated">
-                      <div className="elementor-element elementor-element-76ca4f3 animated-slow elementor-widget elementor-widget-list-image animated zoomIn" data-id="76ca4f3" data-element_type="widget" data-settings='{"_animation":"zoomIn","_animation_delay":200}' data-widget_type="list-image.default">
+                      <div className="elementor-element elementor-element-76ca4f3 animated-slow elementor-widget elementor-widget-list-image elementor-invisible" data-id="76ca4f3" data-element_type="widget" data-settings='{"_animation":"zoomIn","_animation_delay":200}' data-widget_type="list-image.default">
                         <div className="elementor-widget-container">
                           <div className="list-image-container">
                             <div className="row padding-lg-20">
@@ -188,23 +192,23 @@ export default function HomePage() {
                         <div className="elementor-container elementor-column-gap-default">
                           <div className="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-ab7a22b" data-id="ab7a22b" data-element_type="column">
                             <div className="elementor-widget-wrap elementor-element-populated">
-                              <div className="elementor-element elementor-element-df15064 animated-slow elementor-widget elementor-widget-heading animated fadeInUp" data-id="df15064" data-element_type="widget" data-settings='{"_animation":"fadeInUp"}' data-widget_type="heading.default">
+                              <div className="elementor-element elementor-element-df15064 animated-slow elementor-widget elementor-widget-heading elementor-invisible" data-id="df15064" data-element_type="widget" data-settings='{"_animation":"fadeInUp"}' data-widget_type="heading.default">
                                 <div className="elementor-widget-container">
                                   <h2 className="elementor-heading-title elementor-size-default">Đôi lời nhắn gửi</h2>
                                 </div>
                               </div>
-                              <div className="elementor-element elementor-element-35158aa has-quote animated-slow elementor-widget elementor-widget-text-editor animated fadeIn" data-id="35158aa" data-element_type="widget" data-settings='{"_animation":"fadeIn","_animation_delay":600}' data-widget_type="text-editor.default">
+                              <div className="elementor-element elementor-element-35158aa has-quote animated-slow elementor-widget elementor-widget-text-editor elementor-invisible" data-id="35158aa" data-element_type="widget" data-settings='{"_animation":"fadeIn","_animation_delay":600}' data-widget_type="text-editor.default">
                                 <div className="elementor-widget-container">
                                   <p>Lời đầu tiên, cám ơn bạn đã dành thời gian cho chúng mình! Trước khi đi tiếp, rất mong bạn có thể dành chút thời gian cho vài dòng tâm sự nhé!</p>
                                   <p>Có thể hơi khác nhỉ, thay vì thiệp mời là việc đăng ký tham gia như này. Chúng mình thấu hiểu sự trân trọng qua mỗi tấm thiệp hay sự chúc phúc của chiếc phong bì. Nhưng hơn thế, chúng mình không muốn giới hạn hay ràng buộc giữa &quot;phải mời&quot; hay &quot;chỉ được mời&quot; và lựa chọn của chúng ta bị đóng khung trong những cách quen thuộc. Chuyện tình yêu của tụi mình thật ra…. cũng không có gì đặc biệt, nhưng chúng mình muốn ngày kỉ niệm này sẽ diễn ra theo cách đặc biệt nhất có thể. Chúng mình đã làm việc thật chăm chỉ, với mong muốn sẽ tạo ra một đêm đáng nhớ, và háo hức chia sẻ cột mốc này với người quan trọng – là bạn đó!</p>
                                 </div>
                               </div>
-                              <div className="elementor-element elementor-element-894e759 animated-slow elementor-widget elementor-widget-image animated zoomIn" data-id="894e759" data-element_type="widget" data-settings='{"_animation":"zoomIn","_animation_delay":600}' data-widget_type="image.default">
+                              <div className="elementor-element elementor-element-894e759 animated-slow elementor-widget elementor-widget-image elementor-invisible" data-id="894e759" data-element_type="widget" data-settings='{"_animation":"zoomIn","_animation_delay":600}' data-widget_type="image.default">
                                 <div className="elementor-widget-container">
                                   <Image src="/assets/images/cat.svg" className="attachment-large size-large" alt="Cat" width={30} height={30} />
                                 </div>
                               </div>
-                              <div className="elementor-element elementor-element-f08a674 animated-slow elementor-widget elementor-widget-text-editor animated fadeInUp" data-id="f08a674" data-element_type="widget" data-settings='{"_animation":"fadeInUp","_animation_delay":800}' data-widget_type="text-editor.default">
+                              <div className="elementor-element elementor-element-f08a674 animated-slow elementor-widget elementor-widget-text-editor elementor-invisible" data-id="f08a674" data-element_type="widget" data-settings='{"_animation":"fadeInUp","_animation_delay":800}' data-widget_type="text-editor.default">
                                 <div className="elementor-widget-container">
                                   <p>Vì thế nên, trước khi gặp nhau trực tiếp tại đám cưới, tụi mình có giao kèo nhỏ với nhau nhé, ngoắc tay, hứa đó nhé!</p>
                                 </div>
@@ -220,7 +224,7 @@ export default function HomePage() {
                           {/* Promise 1 */}
                           <div className="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-29b603c" data-id="29b603c" data-element_type="column">
                             <div className="elementor-widget-wrap elementor-element-populated">
-                              <div className="elementor-element elementor-element-d6a225d pinky-promise elementor-view-default elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box animated fadeInLeft" data-id="d6a225d" data-element_type="widget" data-settings='{"_animation":"fadeInLeft","_animation_delay":1000}' data-widget_type="icon-box.default">
+                              <div className="elementor-element elementor-element-d6a225d pinky-promise elementor-view-default elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box elementor-invisible" data-id="d6a225d" data-element_type="widget" data-settings='{"_animation":"fadeInLeft","_animation_delay":1000}' data-widget_type="icon-box.default">
                                 <div className="elementor-widget-container">
                                   <div className="elementor-icon-box-wrapper">
                                     <div className="elementor-icon-box-icon">
@@ -242,7 +246,7 @@ export default function HomePage() {
                           {/* Promise 2 */}
                           <div className="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-cc392b9" data-id="cc392b9" data-element_type="column">
                             <div className="elementor-widget-wrap elementor-element-populated">
-                              <div className="elementor-element elementor-element-a371c5e pinky-promise elementor-view-default elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box animated fadeInUp" data-id="a371c5e" data-element_type="widget" data-settings='{"_animation":"fadeInUp","_animation_delay":1000}' data-widget_type="icon-box.default">
+                              <div className="elementor-element elementor-element-a371c5e pinky-promise elementor-view-default elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box elementor-invisible" data-id="a371c5e" data-element_type="widget" data-settings='{"_animation":"fadeInUp","_animation_delay":1000}' data-widget_type="icon-box.default">
                                 <div className="elementor-widget-container">
                                   <div className="elementor-icon-box-wrapper">
                                     <div className="elementor-icon-box-icon">
@@ -264,7 +268,7 @@ export default function HomePage() {
                           {/* Promise 3 */}
                           <div className="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-9fcd31a" data-id="9fcd31a" data-element_type="column">
                             <div className="elementor-widget-wrap elementor-element-populated">
-                              <div className="elementor-element elementor-element-5bcf0e5 pinky-promise elementor-view-default elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box animated fadeInRight" data-id="5bcf0e5" data-element_type="widget" data-settings='{"_animation":"fadeInRight","_animation_delay":1000}' data-widget_type="icon-box.default">
+                              <div className="elementor-element elementor-element-5bcf0e5 pinky-promise elementor-view-default elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-icon-box elementor-invisible" data-id="5bcf0e5" data-element_type="widget" data-settings='{"_animation":"fadeInRight","_animation_delay":1000}' data-widget_type="icon-box.default">
                                 <div className="elementor-widget-container">
                                   <div className="elementor-icon-box-wrapper">
                                     <div className="elementor-icon-box-icon">
@@ -300,17 +304,17 @@ export default function HomePage() {
                           <div id="registerForm" className="elementor-menu-anchor"></div>
                         </div>
                       </div>
-                      <div className="elementor-element elementor-element-80ae592 elementor-widget elementor-widget-heading animated fadeInUp" data-id="80ae592" data-element_type="widget" data-settings='{"_animation":"fadeInUp"}' data-widget_type="heading.default">
+                      <div className="elementor-element elementor-element-80ae592 elementor-widget elementor-widget-heading elementor-invisible" data-id="80ae592" data-element_type="widget" data-settings='{"_animation":"fadeInUp"}' data-widget_type="heading.default">
                         <div className="elementor-widget-container">
                           <h2 className="elementor-heading-title elementor-size-default">Tham gia đám cưới</h2>
                         </div>
                       </div>
-                      <div className="elementor-element elementor-element-b98f722 elementor-widget elementor-widget-text-editor animated zoomIn" data-id="b98f722" data-element_type="widget" data-settings='{"_animation":"zoomIn","_animation_delay":400}' data-widget_type="text-editor.default">
+                      <div className="elementor-element elementor-element-b98f722 elementor-widget elementor-widget-text-editor elementor-invisible" data-id="b98f722" data-element_type="widget" data-settings='{"_animation":"zoomIn","_animation_delay":400}' data-widget_type="text-editor.default">
                         <div className="elementor-widget-container">
                           <p>Và giao kèo đã thực hiện rồi, để chúng mình được đón bạn chu đáo, mời bạn điền các thông tin cơ bản nhé!</p>
                         </div>
                       </div>
-                      <div className="elementor-element elementor-element-61d0e90 animated-slow elementor-widget elementor-widget-spacer animated fadeIn" data-id="61d0e90" data-element_type="widget" data-settings='{"_animation":"fadeIn","_animation_delay":800}' data-widget_type="spacer.default">
+                      <div className="elementor-element elementor-element-61d0e90 animated-slow elementor-widget elementor-widget-spacer elementor-invisible" data-id="61d0e90" data-element_type="widget" data-settings='{"_animation":"fadeIn","_animation_delay":800}' data-widget_type="spacer.default">
                         <div className="elementor-widget-container">
                           <div className="elementor-spacer">
                             <div className="elementor-spacer-inner"></div>

@@ -555,3 +555,12 @@ footer.elementor-slideshow__footer.elementor-lightbox-prevent-close .elementor-s
     padding: 0 20px;
   }
 }
+
+.elementor-invisible {
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+.animated {
+  animation-fill-mode: both !important;
+}
